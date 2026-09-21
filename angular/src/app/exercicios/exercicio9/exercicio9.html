@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Controle de Estoque</h2>
+  
+  <div class="form-group">
+    <label>Nome do Produto:</label>
+    <input type="text" [(ngModel)]="produto" />
+  </div>
+
+  <div class="card">
+    <h3>{{ produto || 'Produto Sem Nome' }}</h3>
+    <p class="stock-label">Quantidade em Estoque:</p>
+    <p class="stock-value">{{ estoque }}</p>
+
+    <div class="actions">
+      <button (click)="decrementar()" [disabled]="estoque === 0" class="btn-minus">-</button>
+      <button (click)="incrementar()" class="btn-plus">+</button>
+    </div>
+  </div>
+</div>
