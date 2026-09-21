@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Cadastro de Produto</h2>
+  <div class="form-group">
+    <label>Produto:</label>
+    <input type="text" [(ngModel)]="produto" placeholder="Ex: Mouse Gamer" />
+  </div>
+  <div class="form-group">
+    <label>Preço (R$):</label>
+    <input type="number" [(ngModel)]="preco" placeholder="Ex: 150" />
+  </div>
+  <div class="form-group">
+    <label>Quantidade:</label>
+    <input type="number" [(ngModel)]="quantidade" placeholder="Ex: 2" />
+  </div>
+
+  <div class="summary" *ngIf="produto || preco || quantidade">
+    <h3>Resumo</h3>
+    <p><strong>Produto:</strong> {{ produto || 'Não informado' }}</p>
+    <p><strong>Preço:</strong> {{ (preco || 0) | currency:'BRL' }}</p>
+    <p><strong>Quantidade:</strong> {{ quantidade || 0 }}</p>
+    <p><strong>Total:</strong> {{ total | currency:'BRL' }}</p>
+  </div>
+</div>

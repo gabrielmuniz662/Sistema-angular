@@ -1,0 +1,51 @@
+/* Estilos para o Exercício 8 */
+.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.summary {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #e0e0e0;
+}
+
+.summary p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
