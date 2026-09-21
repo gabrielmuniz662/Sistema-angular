@@ -1,0 +1,7 @@
+<div class="container">
+  <p>Quantidade: <strong>{{ quantidade }}</strong></p>
+  <div class="actions">
+    <button (click)="decrementar()" [disabled]="quantidade === 0" class="btn-minus">-</button>
+    <button (click)="incrementar()" class="btn-plus">+</button>
+  </div>
+</div>
