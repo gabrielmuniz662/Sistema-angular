@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-exercicio1',
   standalone: true,
   imports: [],
-  templateUrl: './exercicio1.component.html',
-  styleUrl: './exercicio1.component.scss'
+  templateUrl: './exercicio1.html',
+  styleUrl: './exercicio1.scss'
 })
-export class Exercicio1Component {
+export class Exercicio1 {
   nome: string = 'Carlos';
   idade: number = 25;
   curso: string = 'Sistemas de Informação';

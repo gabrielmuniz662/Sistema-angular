@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExerciciosRoutingModule } from './exercicios-routing-module';
-import { Exercicio1Component } from './exercicio1/exercicio1.component';
+import { Exercicio1 } from './exercicio1/exercicio1';
+import { Exercicio2 } from './exercicio2/exercicio2';
 
 @NgModule({
-  declarations: [Exercicio1Component],
-  imports: [CommonModule, ExerciciosRoutingModule],
+  imports: [CommonModule, ExerciciosRoutingModule, Exercicio1, Exercicio2],
 })
 export class ExerciciosModule {}
