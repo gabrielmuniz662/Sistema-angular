@@ -1,0 +1,6 @@
+<div class="container">
+  <button [disabled]="!formularioValido" class="btn-save">Salvar</button>
+  <button (click)="alternarValidade()" class="btn-toggle">
+    Simular Validade (Atual: {{ formularioValido ? 'Válido' : 'Inválido' }})
+  </button>
+</div>
